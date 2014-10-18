@@ -1,15 +1,13 @@
 'use strict';
 
-var mainApp = angular.module('adminApp', [
+var mainApp = angular.module('mainApp', [
 	'ngRoute',
 	'ngAnimate',
 	'ngTouch',
 	'ngCookies',
 	'ngSanitize',
 	'ui.bootstrap',
-	'common-module',
-	'templates-common',
-	'templates-adminApp'
+	'templates-mainApp'
 ])
 .config(['$routeProvider', '$httpProvider', function ($routeProvider, $httpProvider) {
 	

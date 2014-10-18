@@ -33,7 +33,7 @@ module.exports = function (grunt) {
 	var yeomanConfig = {
 		root: 'project',
 		build: 'build',
-		temp: 'projects/.temp'
+		temp: 'project/.temp'
 	};
 
 	// In case in bower.json there is another path specified.
@@ -75,8 +75,7 @@ module.exports = function (grunt) {
 		sass: {
 			options: {
 				loadPath: [
-					'<%= yeoman.root %>/',
-					'<%= yeoman.root %>/common/source'
+					'<%= yeoman.root %>/'
 				]
 			},
 			main: {
@@ -110,13 +109,13 @@ module.exports = function (grunt) {
 
 			bootstrapFontsServer: {
 				expand: true,
-				cwd: '<%= yeoman.root %>/bower-components/bootstrap-sass-official/vendor/assets/fonts',
+				cwd: '<%= yeoman.root %>/bower-components/bootstrap-sass-official/assets/fonts',
 				dest: '<%= yeoman.temp %>/fonts',
 				src: '**/*.{eot,svg,ttf,woff}'
 			},
 			bootstrapFontsDist: {
 				expand: true,
-				cwd: '<%= yeoman.root %>/bower-components/bootstrap-sass-official/vendor/assets/fonts',
+				cwd: '<%= yeoman.root %>/bower-components/bootstrap-sass-official/assets/fonts',
 				dest: '<%= yeoman.build %>/fonts',
 				src: '**/*.{eot,svg,ttf,woff}'
 			},
@@ -193,19 +192,19 @@ module.exports = function (grunt) {
 		 */
 		watch: {
 			mainSass: {
-				files: ['projects/source/**/*.scss'],
+				files: ['project/source/**/*.scss', 'project/fonts/**/*.scss'],
 				tasks: [
 					'sass:main'
 				]
 			},
 			mainTemplates: {
-				files: ['projects/source/**/*.html'],
+				files: ['project/source/**/*.html'],
 				tasks: [
 					'html2js:main'
 				]
 			},
 			mainImages: {
-				files: ['projects/images/**/*.{png,jpg,jpeg,gif,webp,svg}'],
+				files: ['project/images/**/*.{png,jpg,jpeg,gif,webp,svg}'],
 				tasks: [
 					'sprite:main',
 					'sass:main'

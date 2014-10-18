@@ -9,62 +9,47 @@
 
 		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-		<!-- build:css(projects/.temp) launcher/styles/main.css -->
-		<link rel="stylesheet" href="launcher/styles/sprites.css">
-		<link rel="stylesheet" href="launcher/styles/main.css">
+		<!-- build:css(project/.temp) styles/main.css -->
+		<link rel="stylesheet" href="styles/sprites.css">
+		<link rel="stylesheet" href="styles/main.css">
 		<!-- endbuild -->
 
 	</head>
 
-	<body ng-app="launcherApp">
+	<body ng-app="mainApp">
 		<!--[if lt IE 9]>
 		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
 
 		<div class="app-view" ng-view=""></div>
 
-		<!-- build:js launcher/scripts/core.js -->
-		<script src="common/bower-components/jquery/jquery.js"></script>
-		<script src="common/bower-components/angular/angular.js"></script>
+		<!-- build:js scripts/core.js -->
+		<script src="bower-components/jquery/dist/jquery.js"></script>
+		<script src="bower-components/angular/angular.js"></script>
 		<!-- endbuild -->
 
-		<!-- build:js launcher/scripts/modules.js -->
-		<script src="common/bower-components/angular-route/angular-route.js"></script>
-		<script src="common/bower-components/angular-resource/angular-resource.js"></script>
-		<script src="common/bower-components/angular-cookies/angular-cookies.js"></script>
-		<script src="common/bower-components/angular-sanitize/angular-sanitize.js"></script>
-		<script src="common/bower-components/angular-animate/angular-animate.js"></script>
-		<script src="common/bower-components/angular-touch/angular-touch.js"></script>
-		<script src="common/bower-components/angular-ui-bootstrap-bower/ui-bootstrap.js"></script>
-		<script src="common/bower-components/angular-ui-bootstrap-bower/ui-bootstrap-tpls.js"></script>
+		<!-- build:js scripts/modules.js -->
+		<script src="bower-components/angular-route/angular-route.js"></script>
+		<script src="bower-components/angular-resource/angular-resource.js"></script>
+		<script src="bower-components/angular-cookies/angular-cookies.js"></script>
+		<script src="bower-components/angular-sanitize/angular-sanitize.js"></script>
+		<script src="bower-components/angular-animate/angular-animate.js"></script>
+		<script src="bower-components/angular-touch/angular-touch.js"></script>
+		<script src="bower-components/angular-ui-bootstrap-bower/ui-bootstrap.js"></script>
+		<script src="bower-components/angular-ui-bootstrap-bower/ui-bootstrap-tpls.js"></script>
 		<!-- endbuild -->
 
-		<!-- build:js launcher/scripts/plugins.js -->
-		<script src="common/bower-components/x2js/xml2json.js"></script>
+		<!-- build:js scripts/plugins.js -->
 		<!-- endbuild -->
 
-		<!-- build:js(projects/.temp) launcher/scripts/templates.js -->
-		<script src="common/scripts/templates.js"></script>
-		<script src="launcher/scripts/templates.js"></script>
+		<!-- build:js(project/.temp) scripts/templates.js -->
+		<script src="scripts/templates.js"></script>
 		<!-- endbuild -->
 	
-		<!-- build:js launcher/scripts/scripts.js -->
-		<script src="launcher/source/app.js"></script>
+		<!-- build:js scripts/scripts.js -->
+		<script src="source/app.js"></script>
 
-		<script src="common/source/common-module.js"></script>
-		<script src="common/source/select-button.js"></script>
-		<script src="common/source/ajax-click/ajax-click.js"></script>
-		<script src="common/source/ajax-loading-animation.js"></script>
-		<script src="common/source/browser-service.js"></script>
-		<script src="common/source/popover-html/popover-html-unsafe.js"></script>
-
-		<script src="common/source/server/auth-factory.js"></script>
-		<script src="common/source/server/auth-ctrl.js"></script>
-
-		<script src="launcher/source/app-list/app-list-ctrl.js"></script>
-		<script src="launcher/source/about/dialog-about-ctrl.js"></script>
-
-		<script src="launcher/source/main.js"></script>
+		<script src="source/main.js"></script>
 		<!-- endbuild -->
 
 	</body>

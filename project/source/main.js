@@ -1,19 +1,10 @@
 'use strict';
 
 
-angular.module('adminApp').controller('MainCtrl', [
+angular.module('mainApp').controller('MainCtrl', [
 	'$scope',
-	'AuthFactory',
-	function ($scope, AuthFactory) {
+	function ($scope) {
 
-		$scope.isConnected = function() {
-			return AuthFactory.isConnected;
-		};
-		
-		// Logs the user out and returns to the login screen.
-		$scope.logout = function() {
-			AuthFactory.logout();
-		};
 
 	} // end controller
 ]);
