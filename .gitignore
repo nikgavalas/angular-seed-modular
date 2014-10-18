@@ -15,8 +15,12 @@ $RECYCLE.BIN/
 *.msp
 
 # Build Dirs
-build
-build-debug
+build/
+build-debug/
+node_modules/
+project/bower-components/
+project/.temp/
+.sass-cache/
 
 # Sublime ignores
 *.sublime-workspace
