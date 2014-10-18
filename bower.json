@@ -1,0 +1,28 @@
+{
+  "name": "stilmanAngular",
+  "version": "0.5.0",
+  "dependencies": {
+    "angular": "1.2.9",
+    "jquery": "2.0.3",
+    "angular-resource": "1.2.9",
+    "angular-cookies": "1.2.9",
+    "angular-sanitize": "1.2.9",
+    "angular-mocks": "1.2.9",
+    "angular-scenario": "1.2.9",
+    "angular-route": "1.2.9",
+    "angular-animate": "1.2.9",
+    "angular-touch": "1.2.9",
+    "ng-grid": "2.0.7",
+    "leaflet.draw": "0.2.2",
+    "bytebuffer": "*",
+    "angular-ui-bootstrap-bower": "0.10.0",
+    "leaflet-dist-dev": "0.8.3-dev",
+    "bootstrap-sass-official": "3.1.1",
+    "angular-rangeslider": "0.0.7",
+    "angular-bootstrap-colorpicker": "3.0.7",
+    "ng-file-upload-shim": "*",
+    "ng-file-upload": "*",
+    "angular-bootstrap-nav-tree": "*"
+  },
+  "devDependencies": {}
+}

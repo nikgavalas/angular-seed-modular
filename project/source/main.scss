@@ -1,0 +1,44 @@
+$icon-font-path: "../../fonts/bootstrap/";
+
+$scrollbarWidth: 6px;
+$bottom-bar-height: 50px;
+
+/* Common styles for the entire web project. The projects/common/source folder is added in the gruntfile */
+@import "common/fonts/roboto/roboto";
+@import "common/source/bootstrap-extra-styles/bootstrap-overrides";
+@import "common/bower-components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap";
+@import "common/source/positioning/positioning";
+@import "common/source/bootstrap-extra-styles/uimixins";
+@import "common/source/alert-mgr/alert-mgr";
+@import "common/source/animation-styles/animations";
+@import "common/source/ajax-click/ajax-click";
+@import "common/source/app-page-link/app-page-link";
+
+/* Main shared styles */
+
+html, body {
+	margin: 0;
+	@include full-screen;
+}
+
+body {
+	min-height: 100%;
+	overflow-x: hidden;
+
+	/* Disable text selected since we're using double clicks */
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+
+	/* No support for these yet but just in case they get added */
+	-o-user-select: none;
+	user-select: none;          	
+}
+
+.app-view {
+	@include full-screen;
+}
+
+.firstrow-container {
+	margin-top: $navbar-height + $navbar-margin-bottom;
+}
